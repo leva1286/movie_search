@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">movie search</string>
+    <string name="web_res">Постеры предоставлены: https://www.movieposters.com/</string>
+    <string name="btn_menu">меню</string>
+    <string name="btn_menu2">избранное</string>
+    <string name="btn_menu3">посмотреть позже</string>
+    <string name="btn_menu4">подборка</string>
+    <string name="btn_menu5">настройки</string>
+
 </resources>
