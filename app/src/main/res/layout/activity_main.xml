@@ -4,40 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/corner_background"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="55.5dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="55.5dp"
-        android:layout_marginBottom="45dp"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_menu"
+    <HorizontalScrollView
+        android:id="@+id/top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar_layout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="87.75dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/spider_man"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="87.75dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/black_adam"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="87.75dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/poster_3"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="85dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/loki"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/pacific_rim"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="85dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/captain_marvel"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/web_res"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_menu">
+        app:layout_constraintTop_toBottomOf="@+id/top_menu" />
 
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/bottom_menu"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/colorAccent"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/top_menu"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent">
 
-    </FrameLayout>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/tool_bar_menu"
+            app:navigationIcon="@drawable/ic_round_menu_24"
+            app:title="Search it!" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/tool_bar_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
