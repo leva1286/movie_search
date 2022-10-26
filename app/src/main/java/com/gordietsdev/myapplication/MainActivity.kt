@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         topAppBar.setNavigationOnClickListener {
-            Toast.makeText(this, "Выезжающее меню" , Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Выезжающее меню", Toast.LENGTH_SHORT).show()
         }
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
