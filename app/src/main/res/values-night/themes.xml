@@ -15,9 +15,14 @@
     </style>
 
     <style name="MyTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <item name="colorPrimary">#364DC5</item>
+        <item name="colorPrimary">#2E41A6</item>
         <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">#03A9F4</item>
-        <item name="android:colorBackground">@android:color/white</item>
+        <item name="colorAccent">#025880</item>
+        <item name="android:colorBackground">@color/black</item>
     </style>
+
+    <style name="MyTheme.Background">
+        <item name="android:background">@drawable/corner_background</item>
+    </style>
+
 </resources>
