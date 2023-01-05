@@ -6,5 +6,7 @@
     <string name="btn_menu3">посмотреть позже</string>
     <string name="btn_menu4">подборка</string>
     <string name="btn_menu5">настройки</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

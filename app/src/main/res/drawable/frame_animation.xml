@@ -3,22 +3,22 @@
     android:oneshot="false">
 
     <item
-        android:drawable="@drawable/loki"
+        android:drawable="@drawable/poster_4"
         android:duration="500" />
     <item
-        android:drawable="@drawable/spider_man"
+        android:drawable="@drawable/poster_1"
         android:duration="500" />
     <item
-        android:drawable="@drawable/pacific_rim"
+        android:drawable="@drawable/poster_5"
         android:duration="500" />
     <item
         android:drawable="@drawable/poster_3"
         android:duration="500" />
     <item
-        android:drawable="@drawable/black_adam"
+        android:drawable="@drawable/poster_2"
         android:duration="500" />
     <item
-        android:drawable="@drawable/captain_marvel"
+        android:drawable="@drawable/poster_6"
         android:duration="500" />
 
 </animation-list>
