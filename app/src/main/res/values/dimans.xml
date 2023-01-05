@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="name">18sp</dimen>
-    <dimen name="h_side">10dp</dimen>
-    <dimen name="v_side">5dp</dimen>
-</resources>

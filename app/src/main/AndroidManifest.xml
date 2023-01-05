@@ -12,10 +12,7 @@
         android:roundIcon="@drawable/loki"
         android:supportsRtl="true"
         android:theme="@style/MyTheme"
-        tools:targetApi="32">
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
+        tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true">
