@@ -7,15 +7,12 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/loki"
+        android:icon="@drawable/poster_4"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/loki"
+        android:roundIcon="@drawable/poster_4"
         android:supportsRtl="true"
         android:theme="@style/MyTheme"
         tools:targetApi="32">
-        <activity
-            android:name=".DetailsActivity"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
